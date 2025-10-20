@@ -19,7 +19,7 @@ Configurability Galore: Fine-tune your experience with settings stored in Editor
 ## 🚀 Why UnrealExplorer?
 UnrealExplorer isn’t just a tool—it’s a love letter to Unreal Engine enthusiasts. Built from the ground up with Qt 6.9.3 and MSVC 2022 (x64), it’s optimized for Windows and designed to feel snappy yet robust. Whether you’re reverse-engineering game assets, prototyping mods, or just geeking out over Unreal’s inner workings, this app delivers a seamless experience with a touch of elegance. The codebase is clean, the UI is inviting, and the possibilities are endless.
 
-##🛠️ Getting Started
+## 🛠️ Getting Started
 Clone the Repo: Grab the code and dive into the Source/UnrealExplorer directory to explore the magic.
 Build It: Use Visual Studio 2022 with Qt 6.9.3 (MSVC 2022 x64) to compile. The Build folder is ready for your binaries.
 Explore Away: Load a .pak file, fire up the Asset Browser, and let the Object Inspector reveal the game’s secrets.
