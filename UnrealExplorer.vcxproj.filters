@@ -208,10 +208,10 @@
     <ClCompile Include="Source\UnrealExplorer\Runtime\Archieves\PakFile.cpp">
       <Filter>Source\UnrealExplorer\Runtime\Archieves</Filter>
     </ClCompile>
-    <QtMoc Include="Source\UnrealExplorer\Runtime\Archieves\AssetRegistry.h">
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Archieves\PakAssetRegistry.h">
       <Filter>Source\UnrealExplorer\Runtime\Archieves</Filter>
     </QtMoc>
-    <ClCompile Include="Source\UnrealExplorer\Runtime\Archieves\AssetRegistry.cpp">
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Archieves\PakAssetRegistry.cpp">
       <Filter>Source\UnrealExplorer\Runtime\Archieves</Filter>
     </ClCompile>
 
@@ -603,4 +603,5 @@
       <Filter>Content\Editor\Resources</Filter>
     </ResourceCompile>
   </ItemGroup>
+
 </Project>
