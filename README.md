@@ -1,5 +1,5 @@
 # UnrealExplorer
-A Private Advanced tool for Researching Unreal Engine Games Files
+A Private Advanced tool for [Researching, Reversing, UnCooking] Unreal Engine Game Files
 
 #### Developed by: [c0r37py]  -- [Discord](https://discord.gg/uqjmZ5sE2k)
 #### Inspired by: [zeroKilo] -- [Project](https://github.com/zeroKilo/PUBGLiteExplorerWV)
