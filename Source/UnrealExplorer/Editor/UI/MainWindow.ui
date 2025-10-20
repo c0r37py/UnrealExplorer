@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowClass</class>
+ <widget class="QMainWindow" name="MainWindowClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1385</width>
+    <height>777</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Unreal Explorer Ultimate</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTreeWidget" name="treeWidget">
+      <property name="minimumSize">
+       <size>
+        <width>300</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>300</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <column>
+       <property name="text">
+        <string>Files Tree</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="minimumSize">
+       <size>
+        <width>1061</width>
+        <height>699</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>1920</width>
+        <height>1024</height>
+       </size>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tabMain">
+       <attribute name="title">
+        <string>Main</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tabHexView">
+       <attribute name="title">
+        <string>Hex</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab3DView">
+       <attribute name="title">
+        <string>3D</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1385</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionLoad_Single_UPak"/>
+    <addaction name="actionLoad_Folder_UPak"/>
+    <addaction name="actionLoad_Single_UAsset"/>
+    <addaction name="actionLoad_Folder_UAsset"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionLoad_Single_UPak">
+   <property name="text">
+    <string>Load Single UPak</string>
+   </property>
+  </action>
+  <action name="actionLoad_Folder_UPak">
+   <property name="text">
+    <string>Load Folder UPak</string>
+   </property>
+  </action>
+  <action name="actionLoad_Single_UAsset">
+   <property name="text">
+    <string>Load Single UAsset</string>
+   </property>
+  </action>
+  <action name="actionLoad_Folder_UAsset">
+   <property name="text">
+    <string>Load Folder UAsset</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../../../../Content/Editor/Resources/MainWindow.qrc"/>
+ </resources>
+ <connections/>
+</ui>
