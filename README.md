@@ -159,8 +159,8 @@ Source
 			│
 			└───Runtime
 				├───Archieves
-				│       AssetRegistry.cpp
-				│       AssetRegistry.h
+				│       PakAssetRegistry.cpp
+				│       PakAssetRegistry.h
 				│       FArchive.cpp
 				│       FArchive.h
 				│       PakFile.cpp
