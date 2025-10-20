@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <!-- Main Filters -->
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UnrealExplorer">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+    </Filter>
+    
+    <!-- Core Filters -->
+    <Filter Include="Source\UnrealExplorer\Core">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UnrealExplorer\Core\Application">
+      <UniqueIdentifier>{11111111-1111-1111-1111-111111111111}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UnrealExplorer\Core\Objects">
+      <UniqueIdentifier>{22222222-2222-2222-2222-222222222222}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UnrealExplorer\Core\Types">
+      <UniqueIdentifier>{33333333-3333-3333-3333-333333333333}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UnrealExplorer\Core\Utilities">
+      <UniqueIdentifier>{44444444-4444-4444-4444-444444444444}</UniqueIdentifier>
+    </Filter>
+    
+    <!-- Runtime Filters -->
+    <Filter Include="Source\UnrealExplorer\Runtime">
+      <UniqueIdentifier>{55555555-5555-5555-5555-555555555555}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UnrealExplorer\Runtime\Archieves">
+      <UniqueIdentifier>{66666666-6666-6666-6666-666666666666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UnrealExplorer\Runtime\CoreUObject">
+      <UniqueIdentifier>{77777777-7777-7777-7777-777777777777}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UnrealExplorer\Runtime\Engine">
+      <UniqueIdentifier>{88888888-8888-8888-8888-888888888888}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UnrealExplorer\Runtime\Serialization">
+      <UniqueIdentifier>{99999999-9999-9999-9999-999999999999}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UnrealExplorer\Runtime\Compression">
+      <UniqueIdentifier>{AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UnrealExplorer\Runtime\Assets">
+      <UniqueIdentifier>{BBBBBBBB-BBBB-BBBB-BBBB-BBBBBBBBBBBB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UnrealExplorer\Runtime\Exporters">
+      <UniqueIdentifier>{CCCCCCCC-CCCC-CCCC-CCCC-CCCCCCCCCCCC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UnrealExplorer\Runtime\Platforms">
+      <UniqueIdentifier>{DDDDDDDD-DDDD-DDDD-DDDD-DDDDDDDDDDDD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UnrealExplorer\Runtime\Shaders">
+      <UniqueIdentifier>{EEEEEEEE-EEEE-EEEE-EEEE-EEEEEEEEEEEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UnrealExplorer\Runtime\Uncooking">
+      <UniqueIdentifier>{FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF}</UniqueIdentifier>
+    </Filter>
+    
+    <!-- Editor Filters -->
+    <Filter Include="Source\UnrealExplorer\Editor">
+      <UniqueIdentifier>{01234567-89AB-CDEF-0123-456789ABCDEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UnrealExplorer\Editor\Framework">
+      <UniqueIdentifier>{11234567-89AB-CDEF-0123-456789ABCDEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UnrealExplorer\Editor\Widgets">
+      <UniqueIdentifier>{21234567-89AB-CDEF-0123-456789ABCDEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UnrealExplorer\Editor\Views">
+      <UniqueIdentifier>{31234567-89AB-CDEF-0123-456789ABCDEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UnrealExplorer\Editor\Models">
+      <UniqueIdentifier>{41234567-89AB-CDEF-0123-456789ABCDEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UnrealExplorer\Editor\Commands">
+      <UniqueIdentifier>{51234567-89AB-CDEF-0123-456789ABCDEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UnrealExplorer\Editor\Dialogs">
+      <UniqueIdentifier>{61234567-89AB-CDEF-0123-456789ABCDEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UnrealExplorer\Editor\UI">
+      <UniqueIdentifier>{71234567-89AB-CDEF-0123-456789ABCDEF}</UniqueIdentifier>
+    </Filter>
+    
+    <!-- Content Filters -->
+    <Filter Include="Content\Editor">
+      <UniqueIdentifier>{81234567-89AB-CDEF-0123-456789ABCDEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Editor\Resources">
+      <UniqueIdentifier>{91234567-89AB-CDEF-0123-456789ABCDEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Editor\Resources\Icons">
+      <UniqueIdentifier>{A1234567-89AB-CDEF-0123-456789ABCDEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Editor\Shaders">
+      <UniqueIdentifier>{B1234567-89AB-CDEF-0123-456789ABCDEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Editor\Styles">
+      <UniqueIdentifier>{C1234567-89AB-CDEF-0123-456789ABCDEF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Main Source -->
+    <ClCompile Include="Source\main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+
+    <!-- Core Headers -->
+    <ClInclude Include="Source\UnrealExplorer\Core\CoreMacros.h">
+      <Filter>Source\UnrealExplorer\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\UnrealExplorer\Core\CoreMinimal.h">
+      <Filter>Source\UnrealExplorer\Core</Filter>
+    </ClInclude>
+
+    <!-- Core Application -->
+    <QtMoc Include="Source\UnrealExplorer\Core\Application\UEApplication.h">
+      <Filter>Source\UnrealExplorer\Core\Application</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Core\Application\UEApplication.cpp">
+      <Filter>Source\UnrealExplorer\Core\Application</Filter>
+    </ClCompile>
+
+    <!-- Core Objects -->
+    <QtMoc Include="Source\UnrealExplorer\Core\Objects\UObject.h">
+      <Filter>Source\UnrealExplorer\Core\Objects</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Core\Objects\UObject.cpp">
+      <Filter>Source\UnrealExplorer\Core\Objects</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Core\Objects\UClass.h">
+      <Filter>Source\UnrealExplorer\Core\Objects</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Core\Objects\UClass.cpp">
+      <Filter>Source\UnrealExplorer\Core\Objects</Filter>
+    </ClCompile>
+
+    <!-- Core Types -->
+    <QtMoc Include="Source\UnrealExplorer\Core\Types\FName.h">
+      <Filter>Source\UnrealExplorer\Core\Types</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Core\Types\FName.cpp">
+      <Filter>Source\UnrealExplorer\Core\Types</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Core\Types\FString.h">
+      <Filter>Source\UnrealExplorer\Core\Types</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Core\Types\FString.cpp">
+      <Filter>Source\UnrealExplorer\Core\Types</Filter>
+    </ClCompile>
+    <ClInclude Include="Source\UnrealExplorer\Core\Types\TArray.h">
+      <Filter>Source\UnrealExplorer\Core\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\UnrealExplorer\Core\Types\TMap.h">
+      <Filter>Source\UnrealExplorer\Core\Types</Filter>
+    </ClInclude>
+
+    <!-- Core Utilities -->
+    <QtMoc Include="Source\UnrealExplorer\Core\Utilities\FileUtils.h">
+      <Filter>Source\UnrealExplorer\Core\Utilities</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Core\Utilities\FileUtils.cpp">
+      <Filter>Source\UnrealExplorer\Core\Utilities</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Core\Utilities\StringUtils.h">
+      <Filter>Source\UnrealExplorer\Core\Utilities</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Core\Utilities\StringUtils.cpp">
+      <Filter>Source\UnrealExplorer\Core\Utilities</Filter>
+    </ClCompile>
+
+    <!-- Runtime - CoreUObject -->
+    <QtMoc Include="Source\UnrealExplorer\Runtime\CoreUObject\Package.h">
+      <Filter>Source\UnrealExplorer\Runtime\CoreUObject</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\CoreUObject\Package.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\CoreUObject</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Runtime\CoreUObject\ObjectResource.h">
+      <Filter>Source\UnrealExplorer\Runtime\CoreUObject</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\CoreUObject\ObjectResource.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\CoreUObject</Filter>
+    </ClCompile>
+
+    <!-- Runtime - Archives -->
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Archieves\FArchive.h">
+      <Filter>Source\UnrealExplorer\Runtime\Archieves</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Archieves\FArchive.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Archieves</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Archieves\PakFile.h">
+      <Filter>Source\UnrealExplorer\Runtime\Archieves</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Archieves\PakFile.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Archieves</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Archieves\AssetRegistry.h">
+      <Filter>Source\UnrealExplorer\Runtime\Archieves</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Archieves\AssetRegistry.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Archieves</Filter>
+    </ClCompile>
+
+    <!-- Runtime - Engine -->
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Engine\NameTable.h">
+      <Filter>Source\UnrealExplorer\Runtime\Engine</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Engine\NameTable.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Engine</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Engine\ImportTable.h">
+      <Filter>Source\UnrealExplorer\Runtime\Engine</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Engine\ImportTable.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Engine</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Engine\AssetRegistry.h">
+      <Filter>Source\UnrealExplorer\Runtime\Engine</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Engine\AssetRegistry.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Engine</Filter>
+    </ClCompile>
+
+    <!-- Runtime - Serialization -->
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Serialization\BinaryReader.h">
+      <Filter>Source\UnrealExplorer\Runtime\Serialization</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Serialization\BinaryReader.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Serialization</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Serialization\ObjectSerialization.h">
+      <Filter>Source\UnrealExplorer\Runtime\Serialization</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Serialization\ObjectSerialization.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Serialization</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Serialization\PropertySerialization.h">
+      <Filter>Source\UnrealExplorer\Runtime\Serialization</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Serialization\PropertySerialization.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Serialization</Filter>
+    </ClCompile>
+
+    <!-- Runtime - Compression -->
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Compression\OodleCompression.h">
+      <Filter>Source\UnrealExplorer\Runtime\Compression</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Compression\OodleCompression.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Compression</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Compression\ZlibCompression.h">
+      <Filter>Source\UnrealExplorer\Runtime\Compression</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Compression\ZlibCompression.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Compression</Filter>
+    </ClCompile>
+
+    <!-- Runtime - Assets -->
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Assets\TextureAsset.h">
+      <Filter>Source\UnrealExplorer\Runtime\Assets</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Assets\TextureAsset.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Assets</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Assets\StaticMeshAsset.h">
+      <Filter>Source\UnrealExplorer\Runtime\Assets</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Assets\StaticMeshAsset.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Assets</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Assets\SkeletalMeshAsset.h">
+      <Filter>Source\UnrealExplorer\Runtime\Assets</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Assets\SkeletalMeshAsset.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Assets</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Assets\MaterialAsset.h">
+      <Filter>Source\UnrealExplorer\Runtime\Assets</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Assets\MaterialAsset.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Assets</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Assets\BlueprintAsset.h">
+      <Filter>Source\UnrealExplorer\Runtime\Assets</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Assets\BlueprintAsset.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Assets</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Assets\WorldAsset.h">
+      <Filter>Source\UnrealExplorer\Runtime\Assets</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Assets\WorldAsset.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Assets</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Assets\SoundAsset.h">
+      <Filter>Source\UnrealExplorer\Runtime\Assets</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Assets\SoundAsset.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Assets</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Assets\AnimationAsset.h">
+      <Filter>Source\UnrealExplorer\Runtime\Assets</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Assets\AnimationAsset.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Assets</Filter>
+    </ClCompile>
+
+    <!-- Runtime - Exporters -->
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Exporters\TextureExporter.h">
+      <Filter>Source\UnrealExplorer\Runtime\Exporters</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Exporters\TextureExporter.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Exporters</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Exporters\MeshExporter.h">
+      <Filter>Source\UnrealExplorer\Runtime\Exporters</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Exporters\MeshExporter.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Exporters</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Exporters\MaterialExporter.h">
+      <Filter>Source\UnrealExplorer\Runtime\Exporters</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Exporters\MaterialExporter.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Exporters</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Exporters\AudioExporter.h">
+      <Filter>Source\UnrealExplorer\Runtime\Exporters</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Exporters\AudioExporter.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Exporters</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Exporters\AnimationExporter.h">
+      <Filter>Source\UnrealExplorer\Runtime\Exporters</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Exporters\AnimationExporter.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Exporters</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Exporters\BlueprintExporter.h">
+      <Filter>Source\UnrealExplorer\Runtime\Exporters</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Exporters\BlueprintExporter.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Exporters</Filter>
+    </ClCompile>
+
+    <!-- Runtime - Platforms -->
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Platforms\PlatformData.h">
+      <Filter>Source\UnrealExplorer\Runtime\Platforms</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Platforms\PlatformData.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Platforms</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Platforms\WindowsPlatform.h">
+      <Filter>Source\UnrealExplorer\Runtime\Platforms</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Platforms\WindowsPlatform.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Platforms</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Platforms\PS4Platform.h">
+      <Filter>Source\UnrealExplorer\Runtime\Platforms</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Platforms\PS4Platform.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Platforms</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Platforms\PS5Platform.h">
+      <Filter>Source\UnrealExplorer\Runtime\Platforms</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Platforms\PS5Platform.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Platforms</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Platforms\XboxOnePlatform.h">
+      <Filter>Source\UnrealExplorer\Runtime\Platforms</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Platforms\XboxOnePlatform.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Platforms</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Platforms\SwitchPlatform.h">
+      <Filter>Source\UnrealExplorer\Runtime\Platforms</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Platforms\SwitchPlatform.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Platforms</Filter>
+    </ClCompile>
+
+    <!-- Runtime - Shaders -->
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Shaders\ShaderDecoder.h">
+      <Filter>Source\UnrealExplorer\Runtime\Shaders</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Shaders\ShaderDecoder.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Shaders</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Shaders\MaterialGraph.h">
+      <Filter>Source\UnrealExplorer\Runtime\Shaders</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Shaders\MaterialGraph.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Shaders</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Shaders\HLSLGenerator.h">
+      <Filter>Source\UnrealExplorer\Runtime\Shaders</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Shaders\HLSLGenerator.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Shaders</Filter>
+    </ClCompile>
+
+    <!-- Runtime - Uncooking -->
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Uncooking\Uncooker.h">
+      <Filter>Source\UnrealExplorer\Runtime\Uncooking</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Uncooking\Uncooker.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Uncooking</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Uncooking\AssetUncooker.h">
+      <Filter>Source\UnrealExplorer\Runtime\Uncooking</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Uncooking\AssetUncooker.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Uncooking</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Uncooking\UncookingSettings.h">
+      <Filter>Source\UnrealExplorer\Runtime\Uncooking</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Uncooking\UncookingSettings.cpp">
+      <Filter>Source\UnrealExplorer\Runtime\Uncooking</Filter>
+    </ClCompile>
+
+    <!-- Editor - Framework -->
+    <QtMoc Include="Source\UnrealExplorer\Editor\Framework\MainWindow.h">
+      <Filter>Source\UnrealExplorer\Editor\Framework</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Editor\Framework\MainWindow.cpp">
+      <Filter>Source\UnrealExplorer\Editor\Framework</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Editor\Framework\ApplicationCore.h">
+      <Filter>Source\UnrealExplorer\Editor\Framework</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Editor\Framework\ApplicationCore.cpp">
+      <Filter>Source\UnrealExplorer\Editor\Framework</Filter>
+    </ClCompile>
+
+    <!-- Editor - Widgets -->
+    <QtMoc Include="Source\UnrealExplorer\Editor\Widgets\AssetBrowser.h">
+      <Filter>Source\UnrealExplorer\Editor\Widgets</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Editor\Widgets\AssetBrowser.cpp">
+      <Filter>Source\UnrealExplorer\Editor\Widgets</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Editor\Widgets\ObjectInspector.h">
+      <Filter>Source\UnrealExplorer\Editor\Widgets</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Editor\Widgets\ObjectInspector.cpp">
+      <Filter>Source\UnrealExplorer\Editor\Widgets</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Editor\Widgets\PackageViewer.h">
+      <Filter>Source\UnrealExplorer\Editor\Widgets</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Editor\Widgets\PackageViewer.cpp">
+      <Filter>Source\UnrealExplorer\Editor\Widgets</Filter>
+    </ClCompile>
+
+    <!-- Editor - Views -->
+    <QtMoc Include="Source\UnrealExplorer\Editor\Views\TreeView.h">
+      <Filter>Source\UnrealExplorer\Editor\Views</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Editor\Views\TreeView.cpp">
+      <Filter>Source\UnrealExplorer\Editor\Views</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Editor\Views\ListView.h">
+      <Filter>Source\UnrealExplorer\Editor\Views</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Editor\Views\ListView.cpp">
+      <Filter>Source\UnrealExplorer\Editor\Views</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Editor\Views\DetailsView.h">
+      <Filter>Source\UnrealExplorer\Editor\Views</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Editor\Views\DetailsView.cpp">
+      <Filter>Source\UnrealExplorer\Editor\Views</Filter>
+    </ClCompile>
+
+    <!-- Editor - Models -->
+    <QtMoc Include="Source\UnrealExplorer\Editor\Models\FileSystemModel.h">
+      <Filter>Source\UnrealExplorer\Editor\Models</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Editor\Models\FileSystemModel.cpp">
+      <Filter>Source\UnrealExplorer\Editor\Models</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Editor\Models\AssetTreeModel.h">
+      <Filter>Source\UnrealExplorer\Editor\Models</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Editor\Models\AssetTreeModel.cpp">
+      <Filter>Source\UnrealExplorer\Editor\Models</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Editor\Models\ObjectListModel.h">
+      <Filter>Source\UnrealExplorer\Editor\Models</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Editor\Models\ObjectListModel.cpp">
+      <Filter>Source\UnrealExplorer\Editor\Models</Filter>
+    </ClCompile>
+
+    <!-- Editor - Commands -->
+    <QtMoc Include="Source\UnrealExplorer\Editor\Commands\FileCommands.h">
+      <Filter>Source\UnrealExplorer\Editor\Commands</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Editor\Commands\FileCommands.cpp">
+      <Filter>Source\UnrealExplorer\Editor\Commands</Filter>
+    </ClCompile>
+
+    <!-- Editor - Dialogs -->
+    <QtMoc Include="Source\UnrealExplorer\Editor\Dialogs\SettingsDialog.h">
+      <Filter>Source\UnrealExplorer\Editor\Dialogs</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Editor\Dialogs\SettingsDialog.cpp">
+      <Filter>Source\UnrealExplorer\Editor\Dialogs</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Editor\Dialogs\AboutDialog.h">
+      <Filter>Source\UnrealExplorer\Editor\Dialogs</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Editor\Dialogs\AboutDialog.cpp">
+      <Filter>Source\UnrealExplorer\Editor\Dialogs</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Editor\Dialogs\ExportDialog.h">
+      <Filter>Source\UnrealExplorer\Editor\Dialogs</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Editor\Dialogs\ExportDialog.cpp">
+      <Filter>Source\UnrealExplorer\Editor\Dialogs</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Editor\Dialogs\ImportDialog.h">
+      <Filter>Source\UnrealExplorer\Editor\Dialogs</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Editor\Dialogs\ImportDialog.cpp">
+      <Filter>Source\UnrealExplorer\Editor\Dialogs</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Editor\Dialogs\UncookingDialog.h">
+      <Filter>Source\UnrealExplorer\Editor\Dialogs</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Editor\Dialogs\UncookingDialog.cpp">
+      <Filter>Source\UnrealExplorer\Editor\Dialogs</Filter>
+    </ClCompile>
+    <QtMoc Include="Source\UnrealExplorer\Editor\Dialogs\ExportSettingsDialog.h">
+      <Filter>Source\UnrealExplorer\Editor\Dialogs</Filter>
+    </QtMoc>
+    <ClCompile Include="Source\UnrealExplorer\Editor\Dialogs\ExportSettingsDialog.cpp">
+      <Filter>Source\UnrealExplorer\Editor\Dialogs</Filter>
+    </ClCompile>
+
+    <!-- Editor - UI Files -->
+    <QtUic Include="Source\UnrealExplorer\Editor\UI\MainWindow.ui">
+      <Filter>Source\UnrealExplorer\Editor\UI</Filter>
+    </QtUic>
+    <QtUic Include="Source\UnrealExplorer\Editor\UI\AssetBrowser.ui">
+      <Filter>Source\UnrealExplorer\Editor\UI</Filter>
+    </QtUic>
+    <QtUic Include="Source\UnrealExplorer\Editor\UI\ObjectInspector.ui">
+      <Filter>Source\UnrealExplorer\Editor\UI</Filter>
+    </QtUic>
+    <QtUic Include="Source\UnrealExplorer\Editor\UI\PackageViewer.ui">
+      <Filter>Source\UnrealExplorer\Editor\UI</Filter>
+    </QtUic>
+    <QtUic Include="Source\UnrealExplorer\Editor\UI\SettingsDialog.ui">
+      <Filter>Source\UnrealExplorer\Editor\UI</Filter>
+    </QtUic>
+    <QtUic Include="Source\UnrealExplorer\Editor\UI\AboutDialog.ui">
+      <Filter>Source\UnrealExplorer\Editor\UI</Filter>
+    </QtUic>
+    <QtUic Include="Source\UnrealExplorer\Editor\UI\ExportDialog.ui">
+      <Filter>Source\UnrealExplorer\Editor\UI</Filter>
+    </QtUic>
+    <QtUic Include="Source\UnrealExplorer\Editor\UI\ImportDialog.ui">
+      <Filter>Source\UnrealExplorer\Editor\UI</Filter>
+    </QtUic>
+    <QtUic Include="Source\UnrealExplorer\Editor\UI\UncookingDialog.ui">
+      <Filter>Source\UnrealExplorer\Editor\UI</Filter>
+    </QtUic>
+    <QtUic Include="Source\UnrealExplorer\Editor\UI\PreferencesDialog.ui">
+      <Filter>Source\UnrealExplorer\Editor\UI</Filter>
+    </QtUic>
+    <QtUic Include="Source\UnrealExplorer\Editor\UI\ExportSettingsDialog.ui">
+      <Filter>Source\UnrealExplorer\Editor\UI</Filter>
+    </QtUic>
+
+    <!-- Resource Files -->
+    <QtRcc Include="Content\Editor\Resources\MainWindow.qrc">
+      <Filter>Content\Editor\Resources</Filter>
+    </QtRcc>
+
+    <!-- Windows Resources -->
+    <None Include="Content\Editor\Resources\Icons\UnrealExplorer.ico">
+      <Filter>Content\Editor\Resources\Icons</Filter>
+    </None>
+    <ResourceCompile Include="Content\Editor\Resources\UnrealExplorer.rc">
+      <Filter>Content\Editor\Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

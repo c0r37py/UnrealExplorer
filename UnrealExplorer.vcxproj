@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6D9E973A-6830-465F-9C9B-0277424C6C35}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>6.9.3_msvc2022_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>6.9.3_msvc2022_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+
+  <!-- ========== FILE REFERENCES ========== -->
+  <ItemGroup>
+    <!-- Main Source -->
+    <ClCompile Include="Source\main.cpp" />
+    
+    <!-- Core Application -->
+    <QtMoc Include="Source\UnrealExplorer\Core\Application\UEApplication.h" />
+    <ClCompile Include="Source\UnrealExplorer\Core\Application\UEApplication.cpp" />
+    
+    <!-- Core Objects -->
+    <QtMoc Include="Source\UnrealExplorer\Core\Objects\UObject.h" />
+    <ClCompile Include="Source\UnrealExplorer\Core\Objects\UObject.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Core\Objects\UClass.h" />
+    <ClCompile Include="Source\UnrealExplorer\Core\Objects\UClass.cpp" />
+    
+    <!-- Core Types -->
+    <QtMoc Include="Source\UnrealExplorer\Core\Types\FName.h" />
+    <ClCompile Include="Source\UnrealExplorer\Core\Types\FName.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Core\Types\FString.h" />
+    <ClCompile Include="Source\UnrealExplorer\Core\Types\FString.cpp" />
+    <ClInclude Include="Source\UnrealExplorer\Core\Types\TArray.h" />
+    <ClInclude Include="Source\UnrealExplorer\Core\Types\TMap.h" />
+    
+    <!-- Core Utilities -->
+    <QtMoc Include="Source\UnrealExplorer\Core\Utilities\FileUtils.h" />
+    <ClCompile Include="Source\UnrealExplorer\Core\Utilities\FileUtils.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Core\Utilities\StringUtils.h" />
+    <ClCompile Include="Source\UnrealExplorer\Core\Utilities\StringUtils.cpp" />
+    
+    <!-- Core Headers -->
+    <ClInclude Include="Source\UnrealExplorer\Core\CoreMacros.h" />
+    <ClInclude Include="Source\UnrealExplorer\Core\CoreMinimal.h" />
+    
+    <!-- Runtime - CoreUObject -->
+    <QtMoc Include="Source\UnrealExplorer\Runtime\CoreUObject\Package.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\CoreUObject\Package.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Runtime\CoreUObject\ObjectResource.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\CoreUObject\ObjectResource.cpp" />
+    
+    <!-- Runtime - Archives -->
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Archieves\FArchive.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Archieves\FArchive.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Archieves\PakFile.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Archieves\PakFile.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Archieves\AssetRegistry.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Archieves\AssetRegistry.cpp" />
+    
+    <!-- Runtime - Engine -->
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Engine\NameTable.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Engine\NameTable.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Engine\ImportTable.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Engine\ImportTable.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Engine\AssetRegistry.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Engine\AssetRegistry.cpp" />
+    
+    <!-- Runtime - Serialization -->
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Serialization\BinaryReader.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Serialization\BinaryReader.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Serialization\ObjectSerialization.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Serialization\ObjectSerialization.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Serialization\PropertySerialization.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Serialization\PropertySerialization.cpp" />
+    
+    <!-- Runtime - Compression -->
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Compression\OodleCompression.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Compression\OodleCompression.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Compression\ZlibCompression.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Compression\ZlibCompression.cpp" />
+    
+    <!-- Runtime - Assets -->
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Assets\TextureAsset.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Assets\TextureAsset.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Assets\StaticMeshAsset.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Assets\StaticMeshAsset.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Assets\SkeletalMeshAsset.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Assets\SkeletalMeshAsset.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Assets\MaterialAsset.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Assets\MaterialAsset.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Assets\BlueprintAsset.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Assets\BlueprintAsset.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Assets\WorldAsset.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Assets\WorldAsset.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Assets\SoundAsset.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Assets\SoundAsset.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Assets\AnimationAsset.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Assets\AnimationAsset.cpp" />
+    
+    <!-- Runtime - Exporters -->
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Exporters\TextureExporter.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Exporters\TextureExporter.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Exporters\MeshExporter.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Exporters\MeshExporter.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Exporters\MaterialExporter.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Exporters\MaterialExporter.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Exporters\AudioExporter.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Exporters\AudioExporter.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Exporters\AnimationExporter.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Exporters\AnimationExporter.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Exporters\BlueprintExporter.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Exporters\BlueprintExporter.cpp" />
+    
+    <!-- Runtime - Platforms -->
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Platforms\PlatformData.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Platforms\PlatformData.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Platforms\WindowsPlatform.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Platforms\WindowsPlatform.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Platforms\PS4Platform.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Platforms\PS4Platform.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Platforms\PS5Platform.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Platforms\PS5Platform.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Platforms\XboxOnePlatform.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Platforms\XboxOnePlatform.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Platforms\SwitchPlatform.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Platforms\SwitchPlatform.cpp" />
+    
+    <!-- Runtime - Shaders -->
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Shaders\ShaderDecoder.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Shaders\ShaderDecoder.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Shaders\MaterialGraph.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Shaders\MaterialGraph.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Shaders\HLSLGenerator.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Shaders\HLSLGenerator.cpp" />
+    
+    <!-- Runtime - Uncooking -->
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Uncooking\Uncooker.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Uncooking\Uncooker.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Uncooking\AssetUncooker.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Uncooking\AssetUncooker.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Uncooking\UncookingSettings.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Uncooking\UncookingSettings.cpp" />
+    
+    <!-- Editor - Framework -->
+    <QtMoc Include="Source\UnrealExplorer\Editor\Framework\MainWindow.h" />
+    <ClCompile Include="Source\UnrealExplorer\Editor\Framework\MainWindow.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Editor\Framework\ApplicationCore.h" />
+    <ClCompile Include="Source\UnrealExplorer\Editor\Framework\ApplicationCore.cpp" />
+    
+    <!-- Editor - Widgets -->
+    <QtMoc Include="Source\UnrealExplorer\Editor\Widgets\AssetBrowser.h" />
+    <ClCompile Include="Source\UnrealExplorer\Editor\Widgets\AssetBrowser.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Editor\Widgets\ObjectInspector.h" />
+    <ClCompile Include="Source\UnrealExplorer\Editor\Widgets\ObjectInspector.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Editor\Widgets\PackageViewer.h" />
+    <ClCompile Include="Source\UnrealExplorer\Editor\Widgets\PackageViewer.cpp" />
+    
+    <!-- Editor - Views -->
+    <QtMoc Include="Source\UnrealExplorer\Editor\Views\TreeView.h" />
+    <ClCompile Include="Source\UnrealExplorer\Editor\Views\TreeView.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Editor\Views\ListView.h" />
+    <ClCompile Include="Source\UnrealExplorer\Editor\Views\ListView.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Editor\Views\DetailsView.h" />
+    <ClCompile Include="Source\UnrealExplorer\Editor\Views\DetailsView.cpp" />
+    
+    <!-- Editor - Models -->
+    <QtMoc Include="Source\UnrealExplorer\Editor\Models\FileSystemModel.h" />
+    <ClCompile Include="Source\UnrealExplorer\Editor\Models\FileSystemModel.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Editor\Models\AssetTreeModel.h" />
+    <ClCompile Include="Source\UnrealExplorer\Editor\Models\AssetTreeModel.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Editor\Models\ObjectListModel.h" />
+    <ClCompile Include="Source\UnrealExplorer\Editor\Models\ObjectListModel.cpp" />
+    
+    <!-- Editor - Commands -->
+    <QtMoc Include="Source\UnrealExplorer\Editor\Commands\FileCommands.h" />
+    <ClCompile Include="Source\UnrealExplorer\Editor\Commands\FileCommands.cpp" />
+    
+    <!-- Editor - Dialogs -->
+    <QtMoc Include="Source\UnrealExplorer\Editor\Dialogs\SettingsDialog.h" />
+    <ClCompile Include="Source\UnrealExplorer\Editor\Dialogs\SettingsDialog.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Editor\Dialogs\AboutDialog.h" />
+    <ClCompile Include="Source\UnrealExplorer\Editor\Dialogs\AboutDialog.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Editor\Dialogs\ExportDialog.h" />
+    <ClCompile Include="Source\UnrealExplorer\Editor\Dialogs\ExportDialog.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Editor\Dialogs\ImportDialog.h" />
+    <ClCompile Include="Source\UnrealExplorer\Editor\Dialogs\ImportDialog.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Editor\Dialogs\UncookingDialog.h" />
+    <ClCompile Include="Source\UnrealExplorer\Editor\Dialogs\UncookingDialog.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Editor\Dialogs\ExportSettingsDialog.h" />
+    <ClCompile Include="Source\UnrealExplorer\Editor\Dialogs\ExportSettingsDialog.cpp" />
+    
+    <!-- Editor - UI Files -->
+    <QtUic Include="Source\UnrealExplorer\Editor\UI\MainWindow.ui" />
+    <QtUic Include="Source\UnrealExplorer\Editor\UI\AssetBrowser.ui" />
+    <QtUic Include="Source\UnrealExplorer\Editor\UI\ObjectInspector.ui" />
+    <QtUic Include="Source\UnrealExplorer\Editor\UI\PackageViewer.ui" />
+    <QtUic Include="Source\UnrealExplorer\Editor\UI\SettingsDialog.ui" />
+    <QtUic Include="Source\UnrealExplorer\Editor\UI\AboutDialog.ui" />
+    <QtUic Include="Source\UnrealExplorer\Editor\UI\ExportDialog.ui" />
+    <QtUic Include="Source\UnrealExplorer\Editor\UI\ImportDialog.ui" />
+    <QtUic Include="Source\UnrealExplorer\Editor\UI\UncookingDialog.ui" />
+    <QtUic Include="Source\UnrealExplorer\Editor\UI\PreferencesDialog.ui" />
+    <QtUic Include="Source\UnrealExplorer\Editor\UI\ExportSettingsDialog.ui" />
+    
+    <!-- Resource Files -->
+    <QtRcc Include="Content\Editor\Resources\MainWindow.qrc" />
+    
+    <!-- Windows Resources -->
+    <None Include="Content\Editor\Resources\Icons\UnrealExplorer.ico" />
+    <ResourceCompile Include="Content\Editor\Resources\UnrealExplorer.rc" />
+  </ItemGroup>
+
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
