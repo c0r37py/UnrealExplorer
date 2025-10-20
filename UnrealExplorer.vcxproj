@@ -136,8 +136,8 @@
     <ClCompile Include="Source\UnrealExplorer\Runtime\Archieves\FArchive.cpp" />
     <QtMoc Include="Source\UnrealExplorer\Runtime\Archieves\PakFile.h" />
     <ClCompile Include="Source\UnrealExplorer\Runtime\Archieves\PakFile.cpp" />
-    <QtMoc Include="Source\UnrealExplorer\Runtime\Archieves\AssetRegistry.h" />
-    <ClCompile Include="Source\UnrealExplorer\Runtime\Archieves\AssetRegistry.cpp" />
+    <QtMoc Include="Source\UnrealExplorer\Runtime\Archieves\PakAssetRegistry.h" />
+    <ClCompile Include="Source\UnrealExplorer\Runtime\Archieves\PakAssetRegistry.cpp" />
     
     <!-- Runtime - Engine -->
     <QtMoc Include="Source\UnrealExplorer\Runtime\Engine\NameTable.h" />
@@ -298,4 +298,5 @@
   </ImportGroup>
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+
 </Project>
